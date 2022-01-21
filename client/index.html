@@ -13,8 +13,9 @@
     <ol id="history">
     </ol>
     <form>
-      <input id="initials">
-      <input id="message">
+      <input id="initials" placeholder="Initials" maxlength="2"
+        oninput="this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p)">
+      <input id="message" placeholder="Message">
       <button type="button">Send</button>
     </form>
   </main>
